@@ -3,6 +3,8 @@ import 'package:weatherforecast/weather_forecast/model/weather_forecast_model.da
 import 'package:weatherforecast/weather_forecast/network/network.dart';
 import 'package:weatherforecast/weather_forecast/ui/mid_view.dart';
 
+import 'ui/botton_view.dart';
+
 class WeatherForecast extends StatefulWidget {
   @override
   _WeatherForecastState createState() => _WeatherForecastState();
@@ -36,6 +38,7 @@ class _WeatherForecastState extends State<WeatherForecast> {
                     return Column(
                       children: <Widget>[
                         midView(snapshot),
+                        bottomView(snapshot, context),
                       ],
                     );
                   } else {

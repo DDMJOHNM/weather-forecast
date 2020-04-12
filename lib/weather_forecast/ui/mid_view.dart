@@ -50,7 +50,7 @@ Widget midView(AsyncSnapshot<WeatherForecastModel> snapshot){
                  padding: const EdgeInsets.all(8.0),
                  child: Column(
                    children: <Widget>[
-                     Text("${forecastlist[0].wind.speed.toStringAsFixed(1)} mi/h"),
+                     Text("${forecastlist[0].wind.speed.toStringAsFixed(1)} mph"),
                      Icon(FontAwesomeIcons.galacticRepublic, size:20,color:Colors.amber),
                    ],
                  ),
