@@ -23,7 +23,7 @@ Widget bottomView(AsyncSnapshot<WeatherForecastModel>snapshot,BuildContext conte
               itemBuilder: (context,index)=> ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(10)),
                 child:Container(
-                width: MediaQuery.of(context).size.width/2.7,
+                width: MediaQuery.of(context).size.width/2.5,
                  height:160,
                  child: forecastCard(snapshot,index),
                  decoration: BoxDecoration(
